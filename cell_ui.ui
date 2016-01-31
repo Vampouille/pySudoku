@@ -46,12 +46,12 @@
     </sizepolicy>
    </property>
    <property name="styleSheet">
-    <string notr="true">#frame {border: 0px;
+    <string notr="true">Qframe {border: 5px;
 	background-color: rgb(217, 217, 217);
 border-radius: 10px;}</string>
    </property>
    <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
+    <enum>QFrame::Box</enum>
    </property>
    <widget class="QLabel" name="label">
     <property name="geometry">

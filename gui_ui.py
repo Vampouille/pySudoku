@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'gui_ui.ui'
 #
-# Created: Sun Jan 31 15:53:42 2016
+# Created: Sun Jan 31 18:44:33 2016
 #      by: PyQt5 UI code generator 5.2.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -19,11 +19,12 @@ class Ui_MainWindow(object):
         self.goButton.setGeometry(QtCore.QRect(30, 30, 81, 41))
         self.goButton.setObjectName("goButton")
         self.gridLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(140, 10, 521, 521))
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(140, 10, 525, 525))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
         self.grid = QtWidgets.QGridLayout(self.gridLayoutWidget)
-        self.grid.setSpacing(0)
-        self.grid.setContentsMargins(0, 0, 0, 0)
+        self.grid.setSizeConstraint(QtWidgets.QLayout.SetMinimumSize)
+        self.grid.setSpacing(10)
+        self.grid.setContentsMargins(10, 10, 10, 10)
         self.grid.setObjectName("grid")
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)

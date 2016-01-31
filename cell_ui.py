@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'cell_ui.ui'
 #
-# Created: Sun Jan 31 13:57:56 2016
+# Created: Sun Jan 31 18:24:09 2016
 #      by: PyQt5 UI code generator 5.2.1
 #
 # WARNING! All changes made in this file will be lost!
@@ -29,10 +29,10 @@ class Ui_Cell(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.cell_frame.sizePolicy().hasHeightForWidth())
         self.cell_frame.setSizePolicy(sizePolicy)
-        self.cell_frame.setStyleSheet("#frame {border: 0px;\n"
+        self.cell_frame.setStyleSheet("Qframe {border: 5px;\n"
 "    background-color: rgb(217, 217, 217);\n"
 "border-radius: 10px;}")
-        self.cell_frame.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.cell_frame.setFrameShape(QtWidgets.QFrame.Box)
         self.cell_frame.setObjectName("cell_frame")
         self.label = QtWidgets.QLabel(self.cell_frame)
         self.label.setGeometry(QtCore.QRect(0, 0, 50, 50))
