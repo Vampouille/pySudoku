@@ -1,11 +1,6 @@
 #!/usr/bin/env python3
 
-from PyQt5.QtWidgets import QApplication
-import sys, time
 from gui import Gui
-
-
-gui = Gui(QApplication(sys.argv))
 
 
 def go():
@@ -27,5 +22,6 @@ def go():
     gui.setValue(1, 4, 9)
 
 
+gui = Gui()
 gui.setCallBack(go)
 gui.start()

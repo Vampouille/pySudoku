@@ -1,13 +1,16 @@
 from PyQt5.QtWidgets import QMainWindow
 from PyQt5 import QtWidgets
-from PyQt5.QtCore import QObject, QRect
+from PyQt5.QtCore import QObject
 from gui_ui import Ui_MainWindow
 from cell import Cell
+from PyQt5.QtWidgets import QApplication
+import sys
 
 
 class Gui(QMainWindow, Ui_MainWindow):
 
-    def __init__(self, app):
+    def __init__(self):
+        app = QApplication(sys.argv)
         QObject.__init__(self)
         super(Gui, self).__init__()
         self.app = app
